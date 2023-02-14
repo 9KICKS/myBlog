@@ -1,23 +1,10 @@
-package data.models;
+package dtos.requests;
 
-import java.time.LocalDateTime;
-import java.time.temporal.TemporalAccessor;
-
-public class User {
-    private int id;
+public class RegisterRequest {
     private String firstName;
     private String lastName;
     private String username;
     private String password;
-    private LocalDateTime dateRegistered = LocalDateTime.now();
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -53,16 +40,11 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
+        return "RegisterRequest{" +
+                "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
-    }
-
-    public LocalDateTime getDateRegistered() {
-        return dateRegistered;
     }
 }

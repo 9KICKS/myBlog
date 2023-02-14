@@ -74,4 +74,13 @@ public class UserRepositoryImpl implements UserRepository {
         users.removeAll(users);
         count = users.size();
     }
+
+    @Override
+    public User findByUsername(String username) {
+        for (User user : users) {
+            if(user.getUsername().equalsIgnoreCase(username))
+                return user;
+        }
+        return null;
+    }
 }
