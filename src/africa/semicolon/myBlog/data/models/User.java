@@ -1,15 +1,22 @@
-package data.models;
+package africa.semicolon.myBlog.data.models;
 
 import java.time.LocalDateTime;
-import java.time.temporal.TemporalAccessor;
 
 public class User {
     private int id;
     private String firstName;
     private String lastName;
-    private String username;
+    private String userName;
     private String password;
     private LocalDateTime dateRegistered = LocalDateTime.now();
+
+    public LocalDateTime getDateRegistered() {
+        return dateRegistered;
+    }
+
+    public void setDateRegistered(LocalDateTime dateRegistered) {
+        this.dateRegistered = dateRegistered;
+    }
 
     public int getId() {
         return id;
@@ -35,12 +42,12 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -57,12 +64,8 @@ public class User {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", username='" + username + '\'' +
+                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 '}';
-    }
-
-    public LocalDateTime getDateRegistered() {
-        return dateRegistered;
     }
 }
