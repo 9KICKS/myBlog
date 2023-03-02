@@ -1,10 +1,10 @@
-package dtos.requests;
+package africa.semicolon.myBlog.dtos.requests;
 
 public class RegisterRequest {
-    private String firstName;
-    private String lastName;
-    private String username;
-    private String password;
+    String firstName;
+    String lastName;
+    String username;
+    String password;
 
     public String getFirstName() {
         return firstName;

@@ -1,4 +1,4 @@
-package dtos.responses;
+package africa.semicolon.myBlog.dtos.responses;
 
 public class FindUserResponse {
     private int userId;
@@ -10,8 +10,8 @@ public class FindUserResponse {
         return userId;
     }
 
-    public void setUserId(int id) {
-        this.userId = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -41,7 +41,7 @@ public class FindUserResponse {
     @Override
     public String toString() {
         return "FindUserResponse{" +
-                "userId='" + userId + '\'' +
+                "userId=" + userId +
                 ", username='" + username + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", dateRegistered='" + dateRegistered + '\'' +
