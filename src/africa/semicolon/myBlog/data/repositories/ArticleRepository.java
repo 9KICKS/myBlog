@@ -1,7 +1,6 @@
-package data.repositories;
+package africa.semicolon.myBlog.data.repositories;
 
-import data.models.Article;
-
+import africa.semicolon.myBlog.data.models.Article;
 import java.util.List;
 
 public interface ArticleRepository {
@@ -13,9 +12,9 @@ public interface ArticleRepository {
 
     List<Article> findAll();
 
-    void delete(int id);
-
     void delete(Article article);
+
+    void delete(int id);
 
     void deleteAll();
 }
