@@ -1,4 +1,4 @@
-package data.models;
+package africa.semicolon.myBlog.data.models;
 
 import java.time.LocalDateTime;
 
@@ -41,7 +41,7 @@ public class Comment {
         this.comment = comment;
     }
 
-    public LocalDateTime getTimeCreated() {
-        return timeCreated;
+    public void setTimeCreated(LocalDateTime timeCreated) {
+        this.timeCreated = timeCreated;
     }
 }

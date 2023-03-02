@@ -1,7 +1,6 @@
-package data.repositories;
+package africa.semicolon.myBlog.data.repositories;
 
-import data.models.Comment;
-
+import africa.semicolon.myBlog.data.models.Comment;
 import java.util.List;
 
 public interface CommentRepository {
@@ -13,7 +12,9 @@ public interface CommentRepository {
 
     List<Comment> findAll();
 
+    void delete(Comment comment);
+
     void delete(int id);
 
-    void delete(Comment comment);
+    void deleteAll();
 }
